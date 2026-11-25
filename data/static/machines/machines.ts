@@ -23,7 +23,7 @@ const DRILLING_REAMING_MACHINE: IMachine = {
     },
     {
       type: "video",
-      url: "/assets/machines/DRM_3.mp4",
+      url: "/assets/machines/DRM_3.webm",
       alt: "Drilling/Reaming Machine",
     },
   ],
@@ -82,14 +82,19 @@ const MICRO_GUN_DRILLING_MACHINE: IMachine = {
       alt: "Micro Gun Drilling machine",
     },
     {
+      type: "youtube",
+      url: "https://www.youtube.com/embed/tm8GCjhXScE",
+      alt: "Micro Gun Drilling machine",
+    },
+    {
       type: "video",
-      url: "/assets/machines/GDM_M_1.webp",
+      url: "/assets/machines/GDM_M_1.webm",
       alt: "Micro Gun Drilling machine",
     },
 
     {
       type: "video",
-      url: "/assets/machines/GDM_M_3.mp4",
+      url: "/assets/machines/GDM_M_3.webm",
       alt: "Micro Gun Drilling machine",
     },
     {
@@ -172,12 +177,16 @@ const SINGLE_AXIS_GUN_DRILLING_MACHINE: IMachine = {
     "textile_spindles",
     "general_engineering",
   ],
-
   assets: [
     {
       type: "image",
       url: "/assets/machines/GDM_NR_1.webp",
       alt: "Single Axis Gun Drilling machine",
+    },
+    {
+      type: "youtube",
+      url: "https://www.youtube.com/embed/nbsU0v_BU04",
+      alt: "Single Axis Gun Drilling Machine",
     },
     {
       type: "image",
@@ -282,6 +291,11 @@ const KNEE_TYPE_GUN_DRILLING_MACHINE: IMachine = {
   solutions: ["die_mould", "automotive_shafts", "tool_and_die"],
   assets: [
     {
+      type: "video",
+      url: "/assets/machines/GDM_KT_3.webm",
+      alt: "Micro gun Drilling machine knee type",
+    },
+    {
       type: "image",
       url: "/assets/machines/GDM_KT_1.webp",
       alt: "Micro Gun Drilling machine Knee type",
@@ -362,6 +376,11 @@ const MULTI_SPINDLE_GUN_DRILLING_MACHINE: IMachine = {
     {
       type: "image",
       url: "/assets/machines/GDM_MS_1.webp",
+      alt: "Multi Spindle Gun Drilling machine",
+    },
+    {
+      type: "youtube",
+      url: "https://www.youtube.com/embed/UwujHcN4kCw",
       alt: "Multi Spindle Gun Drilling machine",
     },
     {
@@ -486,14 +505,9 @@ const GAS_CYLINDER_HMC_MACHINE: IMachine = {
   assets: [
     ...HMC_ASSETS,
     {
-      type: "image",
-      url: "/assets/machines/HMC_1.webp",
-      alt: "HMC Type Complete Machine",
-    },
-    {
-      type: "image",
-      url: "/assets/machines/HMC_2.webp",
-      alt: "HMC Type Complete Machine",
+      type: "youtube",
+      url: "https://www.youtube.com/embed/ApWrepox1uY",
+      alt: "HMC type complete machine",
     },
   ],
   solutions: ["gas_cylinder_neck_machining"],
@@ -522,6 +536,11 @@ const GAS_CYLINDER_TURNING_SPM: IMachine = {
   tagline: "Turning, facing and drilling of gas cylinder necks.",
   applications: GAS_CYLINDER_APPLICATIONS,
   assets: [
+    {
+      type: "youtube",
+      url: "https://www.youtube.com/embed/RGFsdCiJveU",
+      alt: "Turning type SPM",
+    },
     {
       type: "image",
       url: "/assets/machines/HMC_1.webp",
@@ -648,6 +667,16 @@ const PELLET_DIE_GUN_DRILLING_MACHINE: IMachine = {
   operationsPerformed: ["Brazed Tipped Gun Drills", "Insert Type Gun Drill"],
   applications: ["Pellet Die", "Ring Die", "Flat Die", "Rollers"],
   assets: [
+    {
+      type: "youtube",
+      url: "https://www.youtube.com/embed/Bnsp-p8_ioY",
+      alt: "Pellet Die",
+    },
+    {
+      type: "youtube",
+      url: "https://www.youtube.com/embed/clEMg45FUbo",
+      alt: "Pellet Die",
+    },
     {
       type: "image",
       url: "/assets/machines/PD_GD_2.webp",
@@ -810,7 +839,7 @@ const DEEP_DRILLING_MACHINE_FOR_PELLET_DIE: IMachine = {
     },
     {
       type: "video",
-      url: "/assets/machines/ODDM_2.mp4",
+      url: "/assets/machines/ODDM_2.webm",
       alt: "Deep Drilling Machine for pellet die",
     },
     {

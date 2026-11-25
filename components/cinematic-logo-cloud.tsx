@@ -8,6 +8,7 @@ import Image from "next/image";
 export type LogoCloudClient = {
   name: string;
   slug?: string;
+  logo?: string;
   text?: boolean;
   className?: string;
   nameClassName?: string;
@@ -30,6 +31,23 @@ export function CinematicLogoCloud({
   description = "",
 }: CinematicLogoCloudProps) {
   const renderClient = (client: LogoCloudClient, size: "lg" | "sm" = "lg") => {
+    if (client.logo) {
+      return (
+        <Image
+          src={client.logo}
+          alt={client.name}
+          className={cn(
+            size === "lg"
+              ? "h-10 w-auto max-w-36 object-contain"
+              : "h-12 w-auto max-w-40 object-contain",
+            client.invertDark && "dark:invert",
+          )}
+          width={size === "lg" ? 144 : 112}
+          height={size === "lg" ? 40 : 28}
+          loading="lazy"
+        />
+      );
+    }
     if (client.text) {
       return (
         <span
@@ -72,7 +90,7 @@ export function CinematicLogoCloud({
           {clients.map((brand) => (
             <div
               key={brand.name}
-              className="flex shrink-0 items-center justify-center rounded-xl border border-zinc-200/80 bg-white px-5 py-3 shadow-sm dark:border-white/8 dark:bg-zinc-900"
+              className="flex shrink-0 items-center justify-center px-5 py-3"
             >
               {renderClient(brand, "sm")}
             </div>

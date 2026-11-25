@@ -7,14 +7,32 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./button";
 
-function ItemCardGridWrapper({ children }: { children: React.ReactNode }) {
+function ItemCardGridWrapper({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 gap-2">{children}</div>
+    <div className={cn("grid grid-cols-1 lg:grid-cols-4 gap-2", className)}>
+      {children}
+    </div>
   );
 }
 
-function ItemCardWrapper({ children }: { children: React.ReactNode }) {
-  return <div className="max-w-96 w-full rounded-sm">{children}</div>;
+function ItemCardWrapper({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div className={cn("max-w-96 w-full rounded-sm", className)}>
+      {children}
+    </div>
+  );
 }
 
 export interface IItem {
@@ -24,7 +42,13 @@ export interface IItem {
   href?: string;
 }
 
-function ItemImageBleedCard({ item }: { item: IItem }) {
+function ItemImageBleedCard({
+  item,
+  fullBleed,
+}: {
+  item: IItem;
+  fullBleed?: boolean;
+}) {
   return (
     <Link href={`/solutions/${toKebabCase(item.key)}`}>
       <div
@@ -32,6 +56,9 @@ function ItemImageBleedCard({ item }: { item: IItem }) {
         tabIndex={0}
         className={cn(
           "group relative h-full min-h-130 max-w-full overflow-hidden rounded-[inherit] md:aspect-5/4 lg:aspect-video shadow",
+          {
+            "min-h-130": fullBleed,
+          },
         )}
       >
         <Image

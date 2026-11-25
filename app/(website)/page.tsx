@@ -182,70 +182,59 @@ export default function Home() {
             clients={[
               {
                 name: "Phoenix Engineering",
-                text: true,
-                className: "text-xl font-semibold",
+                logo: "/assets/clients/phoenix-engineering.webp",
               },
               {
                 name: "R K Feed Equipments",
-                text: true,
-                className: "text-lg font-medium ",
+                logo: "/assets/clients/rkb-feed-equipments.webp",
               },
               {
                 name: "Meta Forge Engineering",
-                text: true,
-                className: "text-lg font-medium",
+                logo: "/assets/clients/meta-forge-engineering.webp",
               },
               {
                 name: "JAL Precision",
-                text: true,
-                className: "text-lg font-medium",
+                logo: "/assets/clients/jal-precision.webp",
               },
               {
                 name: "Thermax",
-                text: true,
-                className:
-                  "text-lg uppercase font-bold tracking-wide text-red-600 dark:text-red-500",
+                logo: "/assets/clients/thermax.webp",
               },
               {
                 name: "Elecon Engineering",
-                text: true,
-                className: "text-lg font-semibold tracking-wide",
+                logo: "/assets/clients/elecon-engineering.webp",
               },
               {
                 name: "TD Williamson",
-                text: true,
-                className: "text-xl font-semibold",
+                logo: "/assets/clients/td-williamson.webp",
               },
               {
                 name: "Sai Feed Equipments",
-                text: true,
-                className: "text-lg font-bold",
+                logo: "/assets/clients/sai-feed-equipments.webp",
               },
               {
-                name: "Kimako industries",
-                text: true,
-                className: "text-lg font-bold font-serif tracking-wide",
+                name: "Kimako Industries",
+                logo: "/assets/clients/kimako-industries.webp",
               },
               {
                 name: "Jay Fe Cylinders Limited",
-                text: true,
-                className: "text-lg font-semibold",
+                logo: "/assets/clients/jay-fe-cylinders.webp",
               },
               {
-                name: "Navya Industries",
-                text: true,
-                className: "text-lg font-black tracking-tight",
-              },
-              { name: "Starways", text: true, className: "text-xl font-bold" },
-              {
-                name: "Kirloskar Pneumatic",
-                text: true,
-                className: "text-lg font-semibold",
+                name: "Orion Engineering",
+                logo: "/assets/clients/orion-engineering.webp",
               },
               {
-                name: "Perfect Gears",
-                text: true,
-                className: "text-lg font-bold tracking-widest",
+                name: "Starways",
+                logo: "/assets/clients/starways.webp",
+              },
+              {
+                name: "Pradip Polyfils",
+                logo: "/assets/clients/pradip-polyfils.webp",
+              },
+              {
+                name: "Kirloskar Pneumatic Company Limited",
+                logo: "/assets/clients/kirloskar-pneumatic-company-limited.webp",
               },
             ]}
           />

@@ -11,7 +11,7 @@ export default function NavigationCTA() {
       {/* Secondary Navigation */}
 
       <Link href={secondaryCTA.href} className="max-sm:hidden">
-        <Button className="font-medium" variant={"ghost"}>
+        <Button className="font-medium" variant={"secondary"}>
           {secondaryCTA.label}
           <IconArrowUpRight />
         </Button>

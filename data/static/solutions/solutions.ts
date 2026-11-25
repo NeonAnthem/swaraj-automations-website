@@ -49,7 +49,7 @@ const CORE_PINS: ISolution = {
 const IMPLANTS_AND_INSTRUMENTS: ISolution = {
   key: "implants_and_instruments",
   title: "Implants & Instruments",
-  image: `${IMAGE_PATH}/instrument.webp`,
+  image: `${IMAGE_PATH}/medical.webp`,
   href: "#",
 };
 
@@ -141,9 +141,9 @@ export const SOLUTIONS_MAP = {
   gas_cylinder_neck_machining: GAS_CYLINDER_NECK_MACHINING,
   automotive_shafts: AUTOMOTIVE_SHAFTS,
   core_pins: CORE_PINS,
+  pellet_die: PELLET_DIE,
   implants_and_instruments: IMPLANTS_AND_INSTRUMENTS,
   textile_spindles: TEXTILE_SPINDLES,
-  pellet_die: PELLET_DIE,
   defence: DEFENCE,
   aerospace: AEROSPACE,
   medical: MEDICAL,

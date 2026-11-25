@@ -15,7 +15,7 @@ export default function SolutionsLandingPage() {
         tags: [],
       }}
     >
-      <ItemCardGridWrapper>
+      <ItemCardGridWrapper className="gap-8!">
         {SOLUTIONS_LIST.map((solution) => {
           return (
             <ItemCardWrapper key={solution.key}>
